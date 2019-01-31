@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable func-names */
 module.exports = function(api) {
-  api.cache(true);
+  // api.cache(true);
 
   const presets = [
     [

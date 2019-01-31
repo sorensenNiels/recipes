@@ -25,6 +25,8 @@ import renderHtml from './utils/renderHtml';
 import routes from './routes';
 import { port, host } from './config';
 
+import serverRoutes from './server/routes';
+
 const app = express();
 
 // Use helmet to secure Express with various HTTP headers
@@ -67,6 +69,8 @@ if (!__DEV__) {
     })
   );
 }
+
+app.use('/apis', serverRoutes);
 
 // Register server-side rendering middleware
 app.get('*', (req, res) => {

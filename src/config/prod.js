@@ -5,5 +5,5 @@ const _ = require('lodash');
 const defaultConfig = require('./default');
 
 module.exports = _.merge(defaultConfig, {
-  // Over write default settings here...
+  // Overwrite default settings here...
 });

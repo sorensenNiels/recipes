@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* @flow */
 
 // Avoid webpack hot module error
